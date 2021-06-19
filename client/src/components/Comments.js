@@ -10,7 +10,7 @@ function Comments({ commentsData, nesting }) {
                     <Comment commentData={commentData}></Comment>
                      {(commentData.replies.length !== 0)
                     ? <Comments commentsData={commentData.replies} nesting={nesting + 1}/>
-                    : ''} 
+                    : ''}
                     </div>
                 )
             })}
