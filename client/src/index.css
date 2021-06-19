@@ -1,0 +1,27 @@
+.centered {
+    width: 40%;
+    margin: auto;
+    background-color: #f1f1f1;
+}
+.post {
+    /* background-color: #f1f1f1; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: 1px solid gray;
+    outline-offset: -4px;
+    transition: 0.3s;
+}
+.highlight:hover {
+    background-color: orange;
+    color: white;
+}
+.comment {
+    /* background-color: #f1f1f1; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline-offset: -4px;
+}
