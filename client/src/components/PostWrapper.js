@@ -6,8 +6,13 @@ import { AiOutlineArrowLeft } from 'react-icons/ai'
 function PostWrapper({ postData, setFocus }) {
     return (
         <div className='centered'>
-            <AiOutlineArrowLeft onClick={() => setFocus(null)}/>
-            <Post postData={postData} setFocus={setFocus} focus={true}/>
+            <div style={{padding:'8px'}}>
+                <div onClick={() => setFocus(null)} className='circle' >
+                    <AiOutlineArrowLeft /*style={{margin:'auto'}}*//>
+                </div>
+                <Post postData={postData} setFocus={setFocus} focus={true}/>
+                <hr></hr>
+            </div>
             <Comments commentsData={postData.comments} nesting={0}/>
         </div>
     )
